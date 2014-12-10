@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>Test Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+
+
+    <link rel="import" href="bower_components/topeka-elements/topeka-resources.html">
+    <link rel="import" href="bower_components/topeka-elements/topeka-profile.html">
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</head>
+<body unresolved>
+
+  <polymer-element name="my-element">
+
+    <template>
+      <style>    
+        :host {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+        }
+        #topeka_profile {
+          width: 300px;
+          height: 300px;
+          left: 50px;
+          top: 120px;
+          position: absolute;
+        }
+      </style>
+      <topeka-profile id="topeka_profile" center layout vertical></topeka-profile>
+    </template>
+
+    <script>
+
+      Polymer({
+        
+      });
+
+    </script>
+
+  </polymer-element>
+
+  <my-element></my-element>
+
+
+</body>
+</html>
